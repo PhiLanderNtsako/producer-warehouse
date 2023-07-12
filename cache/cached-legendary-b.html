@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="http://localhost/projects/producerwarehouse/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PRODUCER WAREHOUSE - Product Details</title>
+    <link rel="icon" href="img/Fevicon.png" type="image/png">
+    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--================ Start Header Menu Area =================-->
+    <!--================ Start Header Menu Area =================-->
+<header class="header_area">
+    <!-- ================ Subscribe section start ================= -->
+    <style>
+        .form-popup {
+            display:none;
+        }
+    </style>
+    <div class="form-popup" id="myForm">
+        <form action="search" method="get" class="subscribe-form form-inline mt-5 pt-1" id="search-form">
+            <div class="form-group ml-sm-auto">
+                <button class="btn btn-danger" onclick="closeForm()"><i class="ti-close"></i></button>
+                <input type="text" class="form-control mb-1" name="keyword" placeholder="Search our warehouse" required>
+            </div>
+            <a class="button button-subscribe mr-auto mb-1" href="javascript:;" onclick="document.getElementById('search-form').submit();" name="submit"><i class="ti-search"></i> Search</a>
+        </form>
+    </div>
+    <!-- ================ Subscribe section end ================= -->
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand logo_h" href="home"><img src="img/logo.png" alt="" height="70px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+                        <li class="nav-item "><a class="nav-link" href="home">Home</a></li>
+
+                        <li class="nav-item "><a class="nav-link" href="product-category/beats">Beats</a></li>
+
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sample Packs</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item "><a class="nav-link" href="product-category/midi-loops">Midi Loops</a></li>
+                                <li class="nav-item "><a class="nav-link" href="product-category/drum-loops">Drum Loops</a></li>
+                                <li class="nav-item "><a class="nav-link" href="product-category/melody-loops">Melody Loops</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item "><a class="nav-link" href="product-category/drum-kits">Drum Kits</a></li>
+                        <li class="nav-item "><a class="nav-link" href="product-category/plugins">Plugins</a></li>
+                    </ul>
+                                        <ul class="nav-shop">
+                                            <li class="nav-item"><button><a href="cart"><i class="ti-shopping-cart-full"></i></a><span class="nav-shop__circle">1</span></button></li>
+                                            <li class="nav-item"><button onclick="openForm()"><i class="ti-search"></i></a></button></li>
+                        <li class="nav-item submenu dropdown">
+                            <a href="sign-in" class="nav-link dropdown-toggle button button-header" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="ti-user"></i> Account</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" style="color: black;" href="sign-in"><i class="ti-unlock"></i> Sign In</a></li>
+                                <li class="nav-item"><a class="nav-link" style="color: black;" href="register"><i class="ti-user"></i> Sign Up</a></li>
+                                <li class="nav-item"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                                    </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--================ End Header Menu Area =================-->
+<script>
+    function openForm(){
+       document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm(){
+       document.getElementById("myForm").style.display = "none";
+    }
+</script>
+		<div class="alert alert-success alert-dismissible text-center">
+		    <strong> Product is already added to your cart!</strong>
+		</div>    <!--================ End Header Menu Area =================-->
+
+    <!--================Single Product Area =================-->
+        <div class="product_image_area">
+	<div class="container">
+	    <div class="row s_product_inner">
+		<div class="col-lg-6">
+		    <div class="owl-carousel owl-theme s_Product_carousel">
+			<div class="single-prd-item">
+			    <img class="img-fluid" src="uploads/legend-2/legendary-beast-100321-235833/legendary-beast.jpg" alt="">
+			</div>
+		    </div>
+		</div>
+		<div class="col-lg-5 offset-lg-1">
+		    <div class="s_product_text">
+			<small>legend</small>
+			<h3>legendary beast</h3>
+			<h2>R0.00</h2>
+			<ul class="list">
+			    <li>
+				<a class="active" href="product-category.php?id=beats"><span>Category</span> : BEATS</a>
+			    </li>
+			    <li>
+				<a class="active" href="javascript:;"><span>License</span> : FREE</a>
+			    </li>
+			    <li>
+			   	<a href="javascript:;"><span>Date</span> : 10 Mar, 2021</a>
+			    </li>
+			</ul>
+			<p>legendary beats</p>
+			<div class="product_count">
+			    <form method="post" action="" id="cart-form">
+				<input type="hidden" name="product_id" value="1">
+				<input type="hidden" name="product_title" value="legendary beast">
+				<input type="hidden" name="product_price" value="0.00">
+				<input type="hidden" name="product_image" value="legendary-beast.jpg">
+				<input type="hidden" name="product_category" value="beats">
+				<input type="hidden" name="product_type" value="<br />
+<b>Notice</b>:  Undefined index: product_type in <b>C:\xampp\htdocs\projects\producerwarehouse\single-product.php</b> on line <b>143</b><br />
+">
+				<a class="button primary-btn" href="javascript:;" onclick="document.getElementById('cart-form').submit();"><i class="ti-shopping-cart"></i> Add To Cart</a>
+			    </form>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+    <!--================End Single Product Area =================-->
+
+    <!--================Product Description Area =================-->
+    <section class="product_description_area">
+	<div class="container">
+	    <ul class="nav nav-tabs" id="myTab" role="tablist">
+		<li class="nav-item">
+		    <a class="nav-link " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Description</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Statistics</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Preview</a>
+		</li>
+	    </ul>
+	    <div class="tab-content" id="myTabContent">
+		<div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+		    <p>legendary beats</p>
+		</div>
+		<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+		    <div class="table-responsive">
+		        <table class="table">
+			    <tbody>
+				<tr>
+				    <td>
+					<h5>Number Of Downloads/Orders</h5>
+				    </td>
+				    <td>
+					<h5>3</h5>
+				    </td>
+				</tr>
+			    </tbody>
+			</table>
+	   	    </div>
+		</div>
+		<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+		    <div class="table-responsive">
+		        <table class="table">
+			    <tbody>
+				<tr>
+				    <td>
+					<audio id="player" src="uploads/legend-2/legendary-beast-100321-235833/" type="audio/mp3">
+					</audio>
+					<div>
+					    <button onclick="document.getElementById('player').play()">Play</button>
+					    <button onclick="document.getElementById('player').pause()">Pause</button>
+					    <button onclick="document.getElementById('player').volume +=0.1">Vol +</button>
+					    <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>            
+				    	</div>
+				    </td>
+				</tr>
+			    </tbody>
+			</table>
+	   	    </div>
+		</div>
+	    </div>
+	</section>
+	<!--================End Product Description Area =================-->
+
+	<!--================ Start Top Products in Warehouse area =================-->
+	<section class="related-product-area section-margin--small mt-0">
+	    <div class="container">
+		<div class="section-intro pb-60px">
+		    <p>Popular items in the market</p>
+		    <h2><span class="section-intro__style">Products</span></h2>
+		</div>
+		<div class="row mt-30">
+		    <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
+			<div class="single-search-product-wrapper">
+			    <h2>Top <span class="section-intro__style">Beats</span></h2>
+			    			    <div class="single-search-product d-flex">
+				<a href="product/1/legendary-beast"><img src="uploads/legend-2/legendary-beast-100321-235833/legendary-beast.jpg" alt=""></a>
+				<div class="desc">
+				    <a href="product/1/legendary-beast" class="title">legendary beast</a>
+				    <div class="price">R0.00</div>
+				</div>
+			   </div>
+			   			</div>
+		    </div>
+		    <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
+			<div class="single-search-product-wrapper">
+			    <h2>Top <span class="section-intro__style">Packs</span></h2>
+			    			</div>
+		    </div>
+		    <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
+			<div class="single-search-product-wrapper">
+			    <h2>Top <span class="section-intro__style">Kits</span></h2>
+			    			</div>
+		    </div>
+		    <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
+			<div class="single-search-product-wrapper">
+			    <h2>Top <span class="section-intro__style">VSTs</span></h2>
+			    			</div>
+		    </div>
+		</div>
+	    </div>
+	</section>
+	<!--================ end related Product area =================-->
+
+	<!--================ Start footer Area  =================-->
+	<!--================ Start footer Area  =================-->	
+<footer class="footer">
+    <div class="footer-area">
+        <div class="container">
+            <div class="row section_gap">
+	    	<div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+		    <div class="single-footer-widget tp_widgets">
+			<h4 class="footer_title">Quick Links</h4>
+			<ul class="list">
+			    <li><a href="product-category/beats">Beats</a></li>
+			    <li><a href="product-category/drum-kits">Drum Kits</a></li>
+			    <li><a href="product-category/melody-loops">Melody Loops</a></li>
+			    <li><a href="product-category/vst-plugins">VST Plugins</a></li>
+			    <li><a href="product-category/drum-loops">Drum Loops</a></li>
+			    <li><a href="product-category/midi-loops">Midi Loops</a></li>
+			    <li><a href="product-category/daw-templates">DAW Templates</a></li>
+			</ul>
+		    </div>
+		</div>
+ 	      	<div class="col-lg-3 col-md-6 col-sm-6">
+		    <div class="single-footer-widget tp_widgets">
+			<h4 class="footer_title">Support Links</h4>
+			<ul class="list">
+			    <li><a href="user-account">Your Account</a></li>
+			    <li><a href="product-upload/category">Upload</a></li>
+			    <li><a href="support/about-us">About Us</a></li>
+			    <li><a href="contact">Contact</a></li>
+			    <li><a href="support/faq">FAQ</a></li>
+			    <li><a href="policies/terms-and-conditions">Terms & Conditions</a></li>
+			    <li><a href="policies/privacy-policy">Privacy Policy</a></li>
+			</ul>
+		    </div>
+		</div>
+		<div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+		    <div class="single-footer-widget tp_widgets">
+			<h4 class="footer_title">Contact Us</h4>
+			<div class="ml-40">
+			    <p class="sm-head">
+			    	<span class="fa fa-location-arrow"></span>
+				Parent Company
+			    </p>
+			    <p>Sweet Sound Family (pty) Ltd, Division</p>
+			    <p class="sm-head">
+				<span class="fa fa-phone"></span>
+				Phone Number
+			    </p>
+			    <p>
+				+27 76 979 6293 <br>
+				+27 63 898 8050
+			    </p>
+			    <p class="sm-head">
+				<span class="fa fa-envelope"></span>
+				Email
+			    </p>
+			    <p>
+				support@producerwarehouse.co.za <br>
+				info@producerwarehouse.co.za
+			    </p>
+		      	</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+    <div class="footer-bottom">
+	<div class="container">
+	    <div class="row d-flex">
+		<p class="col-lg-12 footer-text text-center">
+		    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="#" target="_blank">Producer Warehouse</a>
+		</p>
+	    </div>
+	</div>
+    </div>
+</footer>
+<!--================ End footer Area  =================-->	<!--================ End footer Area  =================-->
+   
+	<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="vendors/skrollr.min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+	<script src="vendors/jquery.ajaxchimp.min.js"></script>
+	<script src="vendors/mail-script.js"></script>
+	<script src="js/main.js"></script>
+    </body>
+</html>

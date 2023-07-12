@@ -1,0 +1,218 @@
+<br />
+<b>Notice</b>:  Undefined index: category in <b>C:\xampp\htdocs\projects\producerwarehouse\upload-product.php</b> on line <b>22</b><br />
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <base href="http://localhost/projects/producerwarehouse/">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PRODUCER WAREHOUSE- Upload Product</title>
+        <link rel="icon" href="img/Fevicon.png" type="image/png">
+        <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
+        <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--================ Start Header Menu Area =================-->
+        <!--================ Start Header Menu Area =================-->
+<header class="header_area">
+    <!-- ================ Subscribe section start ================= -->
+    <style>
+        .form-popup {
+            display:none;
+        }
+    </style>
+    <div class="form-popup" id="myForm">
+        <form action="search" method="get" class="subscribe-form form-inline mt-5 pt-1" id="search-form">
+            <div class="form-group ml-sm-auto">
+                <button class="btn btn-danger" onclick="closeForm()"><i class="ti-close"></i></button>
+                <input type="text" class="form-control mb-1" name="keyword" placeholder="Search our warehouse" required>
+            </div>
+            <a class="button button-subscribe mr-auto mb-1" href="javascript:;" onclick="document.getElementById('search-form').submit();" name="submit"><i class="ti-search"></i> Search</a>
+        </form>
+    </div>
+    <!-- ================ Subscribe section end ================= -->
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand logo_h" href="home"><img src="img/logo.png" alt="" height="70px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+                        <li class="nav-item "><a class="nav-link" href="home">Home</a></li>
+
+                        <li class="nav-item "><a class="nav-link" href="product-category/beats">Beats</a></li>
+
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sample Packs</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item "><a class="nav-link" href="product-category/midi-loops">Midi Loops</a></li>
+                                <li class="nav-item "><a class="nav-link" href="product-category/drum-loops">Drum Loops</a></li>
+                                <li class="nav-item "><a class="nav-link" href="product-category/melody-loops">Melody Loops</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item "><a class="nav-link" href="product-category/drum-kits">Drum Kits</a></li>
+                        <li class="nav-item "><a class="nav-link" href="product-category/plugins">Plugins</a></li>
+                    </ul>
+                                            <ul class="nav-shop">
+                                            <li class="nav-item"><button><a href="cart"><i class="ti-shopping-cart"></i></a><span class="nav-shop__circle">0</span></button></li>
+                                            <li class="nav-item"><button onclick="openForm()"><i class="ti-search"></i></a></button></li>
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle button button-header" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="ti-user"></i> legend</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" style="color: black;" href="user-account"><i class="ti-user"></i> Account</a></li>
+                                                            <li class="nav-item"><a class="nav-link" style="color: black;" href="upload-product"><i class="ti-upload"></i> Upload</a></li>
+                                <li class="nav-item"><a class="nav-link" style="color: black;" href="sold-products"><i class="ti-money"></i> Sold Products</a></li>
+                                                            <li class="nav-item"><a class="nav-link" style="color: black;" href=" process/logout.php"><i class="ti-lock"></i> Logout</a></li>
+                                <li class="nav-item"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                                    </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--================ End Header Menu Area =================-->
+<script>
+    function openForm(){
+       document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm(){
+       document.getElementById("myForm").style.display = "none";
+    }
+</script>        <!--================ End Header Menu Area =================-->
+         
+        <!--================ Start footer Area  =================-->
+        <!--================ Start footer Area  =================-->	
+<footer class="footer">
+    <div class="footer-area">
+        <div class="container">
+            <div class="row section_gap">
+	    	<div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+		    <div class="single-footer-widget tp_widgets">
+			<h4 class="footer_title">Quick Links</h4>
+			<ul class="list">
+			    <li><a href="product-category/beats">Beats</a></li>
+			    <li><a href="product-category/drum-kits">Drum Kits</a></li>
+			    <li><a href="product-category/melody-loops">Melody Loops</a></li>
+			    <li><a href="product-category/vst-plugins">VST Plugins</a></li>
+			    <li><a href="product-category/drum-loops">Drum Loops</a></li>
+			    <li><a href="product-category/midi-loops">Midi Loops</a></li>
+			    <li><a href="product-category/daw-templates">DAW Templates</a></li>
+			</ul>
+		    </div>
+		</div>
+ 	      	<div class="col-lg-3 col-md-6 col-sm-6">
+		    <div class="single-footer-widget tp_widgets">
+			<h4 class="footer_title">Support Links</h4>
+			<ul class="list">
+			    <li><a href="user-account">Your Account</a></li>
+			    <li><a href="product-upload/category">Upload</a></li>
+			    <li><a href="support/about-us">About Us</a></li>
+			    <li><a href="contact">Contact</a></li>
+			    <li><a href="support/faq">FAQ</a></li>
+			    <li><a href="policies/terms-and-conditions">Terms & Conditions</a></li>
+			    <li><a href="policies/privacy-policy">Privacy Policy</a></li>
+			</ul>
+		    </div>
+		</div>
+		<div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+		    <div class="single-footer-widget tp_widgets">
+			<h4 class="footer_title">Contact Us</h4>
+			<div class="ml-40">
+			    <p class="sm-head">
+			    	<span class="fa fa-location-arrow"></span>
+				Parent Company
+			    </p>
+			    <p>Sweet Sound Family (pty) Ltd, Division</p>
+			    <p class="sm-head">
+				<span class="fa fa-phone"></span>
+				Phone Number
+			    </p>
+			    <p>
+				+27 76 979 6293 <br>
+				+27 63 898 8050
+			    </p>
+			    <p class="sm-head">
+				<span class="fa fa-envelope"></span>
+				Email
+			    </p>
+			    <p>
+				support@producerwarehouse.co.za <br>
+				info@producerwarehouse.co.za
+			    </p>
+		      	</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+    <div class="footer-bottom">
+	<div class="container">
+	    <div class="row d-flex">
+		<p class="col-lg-12 footer-text text-center">
+		    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="#" target="_blank">Producer Warehouse</a>
+		</p>
+	    </div>
+	</div>
+    </div>
+</footer>
+<!--================ End footer Area  =================-->        <!--================ End footer Area  =================-->
+
+        <!--================ Style & Script For Product Type and Price Inputs  =================-->
+
+        <style media="screen">
+            .hide {
+                display: none;
+            }
+        </style>
+        <script>
+            (
+                function() {
+                    'user strict';
+
+                    var d = document;
+                    var myForm = d.getElementById('upload_form');
+                    var product_price = d.getElementById('product_price');
+                    var product_pricing = d.getElementById('product_pricing');
+                    var temp;
+
+                    myForm.reset();
+                    product_price.className = 'hide';
+                    product_pricing.onchange = function() {
+                        if (this.value === 'exclusive' || this.value === 'premium') {
+                                product_price.className = product_price.className.replace('hide', 'col-md-12 form-group');   
+                        }else{
+                            temp = this.value;
+                            product_price.className = 'hide'; 
+                        }
+                    };
+                }()
+            );
+        </script>
+
+        <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+        <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="vendors/skrollr.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+        <script src="vendors/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/mail-script.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+RewriteEngine On
+
+#RewriteCond %{HTTPS} !on
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^support/about-us/details about-us-details.php [NC,L]
+RewriteRule ^support/about-us about-us.php [NC,L]
+RewriteRule ^cart cart.php [NC,L]
+RewriteRule ^checkout checkout.php [NC,L]
+RewriteRule ^confirmation confirmation.php [NC,L]
+RewriteRule ^contact contact.php [NC,L]
+RewriteRule ^home index.php [NC,L]
+RewriteRule ^sign-in login.php [NC,L]
+RewriteRule ^order-details/([0-9]+)$ order-details.php?id=$1 [NC,L]
+RewriteRule ^payment-cancelled payment-cancel.php [NC,L]
+RewriteRule ^payment-successful payment-success.php [NC,L]
+RewriteRule ^product-category/([a-z-]+)$ product-category.php?category=$1 [NC,L]
+RewriteRule ^product-upload/category product-upload-info.php [NC,L]
+RewriteRule ^sign-up register.php [NC,L]
+RewriteRule ^search search.php [NC,L]
+RewriteRule ^product/([0-9]+)/([a-z-]+)$ single-product.php?id=$1&slug=$2 [NC,L]
+RewriteRule ^sold-products sold-products.php [NC,L]
+RewriteRule ^policies/terms-and-conditions terms-and-conditions.php [NC,L]
+RewriteRule ^upload-product/category/([a-z-]+)$ upload-product.php?category=$1 [NC,L]
+RewriteRule ^user-account user-account.php [NC,L]
+RewriteRule ^support/ faqs.php [NC,L]
+RewriteRule ^policies/privacy-policy privacy-policy.php [NC,L]
+
+Options -Indexes

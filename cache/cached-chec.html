@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <base href="http://localhost/projects/producerwarehouse/">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PRODUCERWAREHOUSE - Checkout</title>
+        <link rel="icon" href="img/Fevicon.png" type="image/png">
+        <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
+        <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--================ Start Header Menu Area =================-->
+        <!--================ Start Header Menu Area =================-->
+<header class="header_area">
+    <!-- ================ Subscribe section start ================= -->
+    <style>
+        .form-popup {
+            display:none;
+        }
+    </style>
+    <div class="form-popup" id="myForm">
+        <form action="search" method="get" class="subscribe-form form-inline mt-5 pt-1" id="search-form">
+            <div class="form-group ml-sm-auto">
+                <button class="btn btn-danger" onclick="closeForm()"><i class="ti-close"></i></button>
+                <input type="text" class="form-control mb-1" name="keyword" placeholder="Search our warehouse" required>
+            </div>
+            <a class="button button-subscribe mr-auto mb-1" href="javascript:;" onclick="document.getElementById('search-form').submit();" name="submit"><i class="ti-search"></i> Search</a>
+        </form>
+    </div>
+    <!-- ================ Subscribe section end ================= -->
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand logo_h" href="home"><img src="img/logo.png" alt="" height="70px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+                        <li class="nav-item "><a class="nav-link" href="home">Home</a></li>
+
+                        <li class="nav-item "><a class="nav-link" href="product-category/beats">Beats</a></li>
+
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sample Packs</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item "><a class="nav-link" href="product-category/midi-loops">Midi Loops</a></li>
+                                <li class="nav-item "><a class="nav-link" href="product-category/drum-loops">Drum Loops</a></li>
+                                <li class="nav-item "><a class="nav-link" href="product-category/melody-loops">Melody Loops</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item "><a class="nav-link" href="product-category/drum-kits">Drum Kits</a></li>
+                        <li class="nav-item "><a class="nav-link" href="product-category/plugins">Plugins</a></li>
+                    </ul>
+                                        <ul class="nav-shop">
+                                            <li class="nav-item"><button><a href="cart"><i class="ti-shopping-cart-full"></i></a><span class="nav-shop__circle">1</span></button></li>
+                                            <li class="nav-item"><button onclick="openForm()"><i class="ti-search"></i></a></button></li>
+                        <li class="nav-item submenu dropdown">
+                            <a href="sign-in" class="nav-link dropdown-toggle button button-header" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="ti-user"></i> Account</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" style="color: black;" href="sign-in"><i class="ti-unlock"></i> Sign In</a></li>
+                                <li class="nav-item"><a class="nav-link" style="color: black;" href="sign-up"><i class="ti-user"></i> Sign Up</a></li>
+                                <li class="nav-item"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                                    </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--================ End Header Menu Area =================-->
+<script>
+    function openForm(){
+       document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm(){
+       document.getElementById("myForm").style.display = "none";
+    }
+</script>        <!--================ End Header Menu Area =================-->
+
+        <!--================ Checkout Area If User Logged In Start =================-->
+        <section class="checkout_area section-margin--small">
+            <div class="container">
+                                <div class="col-lg-12">
+                    <div class="order_box">
+                        <h2>Your Cart</h2>
+                        <ul class="list">
+                            <li>
+                                <a href="javascript:;"><h4>Product <span>Total</span></h4></a>
+                            </li>
+                                                        <li>
+                                <a href="javascript:;">A Boogie wit a Hoodie Type Beat<span class="middle"></span> <span class="last">R460.00</span></a>
+                            </li>
+                                                    </ul><hr>
+                        <ul class="list list_2">
+                            <li>
+                                <a href="javascript:;">Total <span>R460</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>        
+         
+        <section class="checkout_area section-margin--small">
+            <div class="container">
+                <div class="returning_customer">
+                    <div class="check_title">
+                        <h2>If You have shopped with us before, Login below for fast checkout. If not continue to billing section</h2><br>
+                    </div>
+                    <form class="row contact_form" action="sign-in" method="post">
+                        <div class="col-md-6 form-group p_star">
+                            <input type="email" class="form-control" placeholder="Your Email" id="user_email" name="user_email" pattern="[A-z0-9.]+@[A-z]+\.[A-z.]+" required>
+                        </div>
+                        <div class="col-md-6 form-group p_star">
+                            <input type="password" class="form-control" placeholder="Password" id="password" name="user_password" required>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <button type="submit" value="submit" name="submit" class="button button-login">Login</button>
+                            <div class="creat_account">
+                            <a class="lost_pass" href="#">Lost your password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="billing_details">
+                    <div class="row">
+                        <div class="col-lg-12">
+                        <h3>Billing Details</h3>
+                        <form class="row contact_form" action="confirmation" method="post">
+                            <div>
+                                <!-- Hidden -->
+                                <input type="hidden" name="product_id" value="2">
+                                <input type="hidden" name="product_title" value="A Boogie wit a Hoodie Type Beat">
+                                <input type="hidden" name="product_price" value="460.00">
+                                <input type="hidden" name="total_price" value="460">
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <input type="email" class="form-control" placeholder="Email" id="user_email" name="user_email" pattern="[A-z0-9.]+@[A-z]+\.[A-z.]+" required>
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <input type="tel" class="form-control" placeholder="Phone No." id="user_phone" name="user_phone" pattern="[0-9]{10}" required>
+                            </div><br>
+                            <div class="col-md-12 form-group">
+                                <div class="text-center">
+                                    <button type="submit" name="submit" class="button button-paypal">Proceed to Payment</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!--================ End Checkout Area =================-->
+
+        <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+        <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="vendors/skrollr.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+        <script src="vendors/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/mail-script.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    </html>
+    
